@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AULA BOOTSTRAP</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        .fundo{
+            width: 100%;
+            height: 100%;
+        }
+        .distancia{
+            padding-bottom : 20%;
+        }
+        .distancia2{
+            padding-bottom : 10%;
+        }
+        .distancia3{
+            padding-bottom: 5%;
+        }
+        .icones{
+            width : 128px;
+            height : 128px;
+        }
+        .imgPromo{
+            width : 100%; 
+            height : 600px; 
+        }
+        .imgPromoSmall{
+            width : 100%; 
+            height : 300px; 
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl bg-primary navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">LOGOMARCA</a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <div class="mr-auto">
+                    <ul class="navbar-nav lead">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">Página Inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">Carrossel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">Itens alinhados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">Cards</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="Produtos.html" class="btn btn-success btn-block mb-3 mb-xl-0">Produtos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ml-auto">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-auto">
+                            <a href="#" style="width:50px; height:50px; padding-top: 10px;" class="btn btn-outline-success ml-xl-3 mb-3 mb-xl-0 mx-sm-auto d-block rounded-circle">
+                                Sair
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="">
+        <div>
+            <div class="carousel-item active">
+                
+                <img src="imagens/fundo2.jpg" alt="Aperto de mão" class="d-block fundo">
+                <div class="carousel-caption text-light d-none d-xl-block">
+                    <h1 class="display-1">BEM-VINDO</h1>
+                    <h3 class="display-3 distancia">Esse é a nossa loja online em bootstrap</h3>
+                </div>
+                <div class=" carousel-caption text-light d-none d-xl-none d-lg-block">
+                    <h1 class="display-2">BEM-VINDO</h1>
+                    <h3 class="display-4 distancia2">Esse é a nossa loja online em bootstrap</h3>
+                </div>
+                <div class="carousel-caption text-light d-lg-none distancia3">
+                    <h2 class="">BEM-VINDO</h2>
+                    <h4 class="lead">Esse é a nossa loja online em bootstrap</h4>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container mt-5" id="ComoFunciona">
+        <div class="row mb-5 ">
+            <div class="col-lg-12 text-center">
+                <h1 class="text-center display-4">NOSSA LOJA ONLINE</h1>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-lg-3">
+                <img class="mb-3 icones" src="imagens/smart.png" >
+                <p class="lead text-black">Compre com seu Smartphone onde quiser.</p>
+            </div>
+            <div class="col-lg-3">
+                <img class="mb-3 icones" src="imagens/pc.png" >
+                <p class="lead text-black">Acompanhe o andamento do seu pedido online e em qulaquer lugar.</p>
+            </div>
+            <div class="col-lg-3">
+                <img class="mb-3 icones" src="imagens/mao.png" >
+                <p class="lead text-black">Temos as melhores condições do mercado.</p>
+            </div>
+            <div class="col-lg-3">
+                <img class="mb-3 icones" src="imagens/receber.png" >
+                <p class="lead text-black">Economize com nossas promoções.</p>
+            </div>
+        </div>
+    </section>
+
+    <div>
+        <h3 class="text-center display-4 text-primary my-5">Vejam nosso carrossel!</h3>
+    </div>
+    <div class="container">
+        <div id="CarrosselSite4" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#CarrosselSite4" data-slide-to="0" class="active"></li>
+                <li data-target="#CarrosselSite4" data-slide-to="1"></li>
+                <li data-target="#CarrosselSite4" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagens/fundo.jpg" class="img-fluid d-none d-lg-block imgPromo">
+                    <img src="imagens/fundo.jpg" class="img-fluid d-lg-none imgPromoSmall">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/fundo2.jpg" class="img-fluid d-none d-lg-block imgPromo">
+                    <img src="imagens/fundo2.jpg" class="img-fluid d-lg-none imgPromoSmall">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/chapeu.jpg" class="img-fluid d-none d-lg-block imgPromo">
+                    <img src="imagens/chapeu.jpg" class="img-fluid d-lg-none imgPromoSmall">
+                </div>
+            </div>
+            <div>
+                <a class="carousel-control-prev" href="#CarrosselSite4" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#CarrosselSite4" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="sr-only">Avançar</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>
